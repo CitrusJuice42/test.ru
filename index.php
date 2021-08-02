@@ -31,7 +31,7 @@
         <div class="buttons">
             <button class="button1" id="b1" onclick="window.location.href='query.php'">Иcпытательный срок</button>
             <button class="button2" id="b2" onclick="window.location.href='query2.php'">Уволенные</button>
-            <button class="button3" id="b3" >Начальники</button>
+            <button class="button3" id="b3" onclick="window.location.href='query3.php'">Начальники</button>
         </div>
 
 
