@@ -6,7 +6,6 @@
      $result = mysqli_query($connection,"SELECT * FROM user");
      $numrows= mysqli_num_rows($result);?>
  <head>
-    <script type="javascript/" src="jquery.js"></script>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="css/style.css">
@@ -30,24 +29,12 @@
     </div>
 
         <div class="buttons">
-            <button class="button1" id="b1" >Иcпытательный срок</button>
-            <button class="button2" id="b2" >Уволенные</button>
+            <button class="button1" id="b1" onclick="window.location.href='query.php'">Иcпытательный срок</button>
+            <button class="button2" id="b2" onclick="window.location.href='query2.php'">Уволенные</button>
             <button class="button3" id="b3" >Начальники</button>
         </div>
 
-<script>
-    $(document).ready(function(){
-        $('#b1').click(function(){
-            $.ajax({
-                url:"query.php",
-                cache:false,
-                succes: function(html){
-                    $("table-responsive").html($table1);
-                }
-            });
-        });
-    });
-</script>
+
 
 
 </body>
